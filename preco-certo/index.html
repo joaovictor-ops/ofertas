@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preço Certo do Artesanato · planilha de preço para quem vende artesanato</title>
+<meta name="description" content="Planilha (Excel e Google Planilhas) que calcula o custo real de cada peça artesanal, com material fracionado, sua hora, perdas e embalagem, e mostra 3 preços na mesma linha: varejo, atacado e marketplace, com alerta de prejuízo. + guia de 24 páginas.">
+<meta property="og:title" content="Preço Certo do Artesanato · planilha de preço para quem vende artesanato">
+<meta property="og:description" content="Planilha (Excel e Google Planilhas) que calcula o custo real de cada peça artesanal, com material fracionado, sua hora, perdas e embalagem, e mostra 3 preços na mesma linha: varejo, atacado e marketplace, com alerta de prejuízo. + guia de 24 páginas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://joaovictor-ops.github.io/ofertas/preco-certo/og.jpg">
+<meta property="og:url" content="https://joaovictor-ops.github.io/ofertas/preco-certo/">
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1445537464173207');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {content_name: 'Preço Certo do Artesanato', content_ids: ['P013'], content_type: 'product', value: 27.90, currency: 'BRL'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1445537464173207&ev=PageView&noscript=1"/></noscript>
+<style>
+@font-face{font-family:Fraunces;font-style:normal;font-weight:600 800;font-display:swap;src:url(fonts/fraunces-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Fraunces;font-style:normal;font-weight:600 800;font-display:swap;src:url(fonts/fraunces-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--red:#7A3B62;--red-d:#5A2A48;--green:#2C7468;--gold:#F2B648;--cream:#FBF3EA;--ink:#2B2622;--muted:#5E554B;--line:#E8DFCF;--box:#EAF4F1}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;font-size:17px;overflow-x:hidden;padding-bottom:76px}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0 0 12px;color:var(--red);font-weight:800}
+h1{font-size:34px}
+h1 em{font-style:normal;color:var(--green)}
+h2{font-size:28px}
+h3{font-size:20px;color:var(--green);font-weight:700}
+p{margin:0 0 12px}
+a{color:var(--red)}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+.k{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin:0 0 6px}
+header{background:var(--cream);padding:12px 0;border-top:6px solid var(--red)}
+.brand{display:flex;align-items:center;gap:10px;font-family:Fraunces,Georgia,serif;font-weight:800;color:var(--red);font-size:20px}
+.brand svg{width:38px;height:38px;flex:0 0 38px}
+.hero{background:var(--cream);padding:14px 0 30px}
+.sub{font-size:18px;color:var(--muted)}
+.shot{border:1px solid #D8D0C2;border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 8px 22px rgba(60,40,20,.12)}
+.cap{font-size:14px;color:var(--muted);margin:8px 0 0}
+.rolar{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.rolar img{min-width:var(--mw,100%)}
+.arraste{font-size:13px;color:var(--muted);text-align:right;margin:4px 0 0}
+.btn{display:block;width:100%;text-align:center;background:var(--red);color:#fff;font-weight:800;font-size:20px;padding:16px 18px;border-radius:14px;text-decoration:none;box-shadow:0 5px 0 var(--red-d);margin:18px 0 8px}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--red-d)}
+.mini{font-size:14px;color:var(--muted);text-align:center;margin:0}
+section{padding:36px 0;border-bottom:1px solid #eee}
+.dor{list-style:none;padding:0;margin:0 0 12px}
+.dor li{padding:10px 0 10px 32px;position:relative;border-bottom:1px dashed var(--line)}
+.dor li:before{content:"?";position:absolute;left:0;top:10px;width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.ok{list-style:none;padding:0;margin:0}
+.ok li{padding:9px 0 9px 32px;position:relative;border-bottom:1px dashed var(--line)}
+.ok li:before{content:"✓";position:absolute;left:0;top:9px;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.no li:before{content:"✕";background:#8A8076}
+.box{background:var(--box);border-left:5px solid var(--green);border-radius:8px;padding:12px 14px;margin:14px 0}
+.demo{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.demo>*{min-width:0}
+.demo figure{margin:0}
+.demo h3{margin-bottom:4px}
+.demo p{color:var(--muted);font-size:16px}
+.kit{display:grid;gap:14px}
+.item{display:flex;gap:14px;align-items:flex-start;background:var(--cream);border-radius:12px;padding:12px}
+.item img{width:92px;flex:0 0 92px;border-radius:6px;border:1px solid var(--line);background:#fff}
+.item b{display:block;color:var(--green);font-size:17px}
+.item span{font-size:15px;color:var(--muted)}
+.bump{background:var(--cream)}
+.arts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
+.arts img{border-radius:6px;width:100%;border:1px solid var(--line)}
+.pill{display:inline-block;vertical-align:middle;font-family:system-ui,Arial,sans-serif;font-size:16px;font-weight:800;color:#fff;background:var(--green);border-radius:20px;padding:3px 12px}
+.no-t{margin-top:22px}
+.preco{background:var(--green);color:#fff;border-radius:16px;padding:22px 18px;text-align:center}
+.preco .v{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:52px;color:var(--gold);line-height:1;margin:6px 0}
+.preco p{color:#F1F1EC;margin:4px 0}
+.preco .btn{background:var(--gold);color:#3A2700;box-shadow:0 5px 0 #C98F22}
+.gar{display:flex;gap:14px;align-items:center;border:2px solid var(--line);border-radius:14px;padding:14px;margin-top:18px}
+.gar .n{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:34px;color:var(--red);flex:0 0 auto;line-height:1;text-align:center}
+.gar .n small{display:block;font-size:13px;font-family:system-ui,Arial,sans-serif;color:var(--muted)}
+details{border:1px solid #E5E5E5;border-radius:12px;padding:12px 14px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;color:var(--ink)}
+details p{margin:8px 0 0;color:var(--muted)}
+footer{background:var(--cream);padding:26px 0 30px;font-size:14px;color:var(--muted)}
+footer p{margin:0 0 8px}
+.barra{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:10px 16px;display:flex;align-items:center;gap:12px;z-index:5}
+.barra .t{font-size:14px;line-height:1.25;color:var(--muted)}
+.barra .t b{display:block;font-size:18px;color:var(--ink)}
+.barra .btn{margin:0;font-size:17px;padding:12px 14px;flex:1;box-shadow:0 3px 0 var(--red-d)}
+@media (min-width:700px){
+  body{font-size:18px;padding-bottom:0}
+  h1{font-size:46px}
+  h2{font-size:34px}
+  .hero{padding:26px 0 44px}
+  .herogrid{display:grid;grid-template-columns:1.15fr 1fr;gap:34px;align-items:center}
+  .demo{grid-template-columns:1fr 1fr}
+  .rolar{overflow:hidden}
+  .rolar img{min-width:0}
+  .arraste{display:none}
+  .kit{grid-template-columns:1fr 1fr}
+  .arts{max-width:540px}
+  .no-t{margin-top:0}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .btn{max-width:460px;margin-left:auto;margin-right:auto}
+  .barra{display:none}
+}
+</style>
+</head>
+<body>
+
+<header><div class="wrap"><div class="brand"><span class="lg"></span>Preço Certo do Artesanato</div></div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="herogrid"><div>
+  <p class="k">Para quem vende artesanato</p>
+  <h1>Você sabe quanto custa <em>de verdade</em> a peça que você vende?</h1>
+  <p class="sub">Uma planilha que divide o novelo, o metro de tecido e o quilo de cera por peça, soma a sua hora, a perda e a embalagem, e mostra <b>3 preços na mesma linha</b>: varejo, atacado e marketplace, com alerta de prejuízo.</p>
+  </div>
+  <figure style="margin:0">
+    <div class="shot"><img src="img/hero.jpg" width="1000" height="800" alt="Planilha Preço Certo do Artesanato com os preços de varejo, atacado e marketplace e o guia"></div>
+    <figcaption class="cap">Prints reais da planilha (versão com exemplo fictício) e do guia.</figcaption>
+  </figure></div>
+  <a class="btn cta" href="#">Quero a planilha · R$ 27,90</a>
+  <p class="mini">Compra única · garantia de 7 dias · Excel e Google Planilhas, sem macro</p>
+</div></div>
+
+<section id="dor"><div class="wrap">
+  <h2>Vende bastante e, no fim do mês, não sobra quase nada?</h2>
+  <p>No artesanato, o preço costuma nascer de um destes jeitos:</p>
+  <ul class="dor"><li>O "preço da vizinha": você cobra o que as outras cobram, sem saber se paga o seu material e o seu tempo.</li><li>O novelo de 100 g rende várias peças, o metro de tecido também... e o pedaço que cada peça usa nunca entra na conta.</li><li>As 5 horas de um amigurumi ou as 8 horas de um bordado ficam de fora, como se o seu tempo fosse de graça.</li><li>O mesmo preço vai para o marketplace, que tira comissão, tarifa e às vezes o frete.</li><li>A lojista pede 40% de desconto no atacado e você não sabe se ainda sobra alguma coisa.</li></ul>
+  <p>O Preço Certo do Artesanato faz essa conta por você, peça por peça. Você digita o que comprou e o quanto usou; a planilha mostra quanto a peça custa, quanto cobrar em cada canal e onde está o prejuízo.</p>
+</div></section>
+
+<section id="o-que-e"><div class="wrap">
+  <p class="k">O que é</p>
+  <h2>Não é mais uma calculadora de "material × 3"</h2>
+  <div class="cols"><div><p>Calculadoras genéricas pedem um custo de material pronto. Aqui você cadastra o material <b>do jeito que compra</b> (novelo de 100 g, metro de tecido, kg de cera, pacote de 50 folhas) e digita só o que usou: 35 g, 0,4 m, 180 g, 1/4 de folha. A planilha divide, soma a perda, a embalagem, os minutos de trabalho pelo valor da sua hora e a parte das contas do mês.</p><p>Na mesma linha aparecem o <b>preço de varejo</b>, o <b>preço de atacado</b> com o desconto que você escolher (e o desconto máximo sem prejuízo) e o <b>preço no marketplace</b> com a comissão, a tarifa e o frete que você digita. Se algum deles dá prejuízo, a linha fica vermelha.</p></div><div class="box" style="margin-top:0"><b>Como funciona em 3 passos</b><br>1. Em "Meu ateliê", diga quanto quer ganhar por mês, as horas, as contas e as taxas dos seus canais.<br>2. Cadastre os materiais como você compra e faça a ficha de cada peça.<br>3. Abra a aba Preços: varejo, atacado e marketplace lado a lado, com o lucro e o alerta.</div></div>
+</div></section>
+
+<section id="demonstracao"><div class="wrap">
+  <p class="k">Por dentro</p>
+  <h2>Veja a planilha calculando (prints reais)</h2>
+  <p style="color:var(--muted)">Prints reais da versão com exemplo fictício: 9 peças inventadas para mostrar a conta. Não são preços de mercado.</p>
+  <div class="demo"><figure><h3>3 preços na mesma linha</h3><p>Varejo, atacado e marketplace lado a lado, cada um com o lucro por peça. PREJUÍZO aparece em vermelho, dizendo em qual preço.</p><div class="shot rolar" style="--mw:820px"><img loading="lazy" src="img/tres.jpg" width="1000" height="185" alt="Aba Preços com varejo, atacado e marketplace"></div><p class="arraste">arraste para o lado ↔</p></figure><figure><h3>Material fracionado</h3><p>35 g de um novelo de 100 g, 0,4 m de tecido, 180 g de um quilo de cera: digite o que usou e veja o custo e a parte do pacote.</p><div class="shot"><img loading="lazy" src="img/ficha.jpg" width="1000" height="1040" alt="Ficha de uma peça com materiais fracionados"></div></figure><figure><h3>Atacado sem prejuízo</h3><p>Escolha o desconto de revenda por peça e veja o desconto MÁXIMO que ainda paga material, sua hora e as contas.</p><div class="shot rolar" style="--mw:640px"><img loading="lazy" src="img/atacado.jpg" width="1000" height="395" alt="Colunas de atacado com desconto máximo"></div><p class="arraste">arraste para o lado ↔</p></figure><figure><h3>Marketplace com as suas taxas</h3><p>Comissão, tarifa por item e frete que você digita (as taxas mudam: você confere a tabela atual da plataforma). Mínimo para empatar e preço sugerido.</p><div class="shot rolar" style="--mw:820px"><img loading="lazy" src="img/canal.jpg" width="1000" height="266" alt="Colunas de marketplace e situação"></div><p class="arraste">arraste para o lado ↔</p></figure><figure><h3>Catálogo pronto para a cliente</h3><p>Tabela de preços com nome do ateliê, prazo e pagamento, puxada da aba Preços. Varejo e, se quiser, atacado a partir de N peças.</p><div class="shot"><img loading="lazy" src="img/catalogo.jpg" width="1000" height="870" alt="Aba Catálogo com tabela de preços"></div></figure><figure><h3>Encomendas com sinal, saldo e prazo</h3><p>Anote cada pedido: o preço vem do canal, o saldo é calculado e o prazo avisa quando está perto ou ATRASADO. O lucro de cada venda aparece ao lado.</p><div class="shot rolar" style="--mw:900px"><img loading="lazy" src="img/encomendas.jpg" width="1000" height="339" alt="Aba Encomendas"></div><p class="arraste">arraste para o lado ↔</p></figure></div>
+</div></section>
+
+<section id="o-que-vem"><div class="wrap">
+  <p class="k">O que vem</p>
+  <h2>Tudo o que você recebe</h2>
+  <div class="kit"><div class="item"><img loading="lazy" src="img/t_planilha.jpg" width="400" height="566" alt=""><div><b>Planilha EM BRANCO</b><span>30 peças, 150 materiais, 300 compras e 300 encomendas. Excel, Google Planilhas e LibreOffice, sem macro.</span></div></div><div class="item"><img loading="lazy" src="img/t_exemplo.jpg" width="400" height="566" alt=""><div><b>Planilha com EXEMPLO</b><span>9 peças fictícias (crochê, costura, vela, sabonete, papelaria, bordado, resina, biscuit, macramê) para aprender olhando.</span></div></div><div class="item"><img loading="lazy" src="img/t_guia.jpg" width="400" height="566" alt=""><div><b>Guia de 24 páginas</b><span>Custo em 6 partes, material fracionado, sua hora, atacado, marketplace, o que fazer quando aparece PREJUÍZO e mensagens para passar o preço.</span></div></div><div class="item"><img loading="lazy" src="img/t_comece.jpg" width="400" height="566" alt=""><div><b>Comece em 10 minutos</b><span>1 página para deixar ao lado da planilha: do arquivo baixado ao preço da primeira peça.</span></div></div></div>
+  <ul class="ok" style="margin-top:14px"><li>Abas: Meu ateliê, Materiais, Compras (custo médio), Fichas das peças, Preços, Catálogo, Encomendas, Estoque e Resumo do mês.</li><li>Taxas de marketplace e loja colaborativa editáveis: você digita as que valem para você.</li><li>Resumo do mês por canal: faturamento, taxas, sua hora paga e lucro; peça que mais paga a sua hora.</li></ul>
+  <a class="btn cta" href="#">Quero a planilha · R$ 27,90</a>
+</div></section>
+
+<section id="bump" class="bump"><div class="wrap">
+  <p class="k">Opcional na hora do pagamento</p>
+  <h2>Etiquetas do Ateliê <span class="pill">+ R$ 12,90</span></h2>
+  <p>4 modelos de tag (Feito à mão, Peça única, Feito com carinho, Artesanal) com verso, 12 etiquetas redondas, <b>8 cartões "Como cuidar"</b> (crochê e amigurumi, costura, bordado, vela, sabonete, biscuit, resina, macramê), 4 cartões de agradecimento e 24 etiquetas de preço para feira. PDF A4 para imprimir + arquivo editável (.pptx) para digitar o nome do seu ateliê.</p>
+  <div class="arts"><img loading="lazy" src="img/bump1.jpg" alt="Etiquetas do Ateliê"><img loading="lazy" src="img/bump2.jpg" alt="Etiquetas do Ateliê"><img loading="lazy" src="img/bump3.jpg" alt="Etiquetas do Ateliê"></div>
+  <p class="mini" style="text-align:left">Não é obrigatório: o produto principal funciona sem ele. Aparece como opção na página de pagamento.</p>
+</div></section>
+
+<section id="para-quem"><div class="wrap">
+  <div class="cols">
+    <div><h2>Para quem é</h2><ul class="ok"><li>Artesãs que vendem crochê e amigurumi, costura e patchwork, papelaria personalizada, velas e sabonetes, bordado, biscuit, resina, macramê.</li><li>Quem vende por encomenda, em feira, no Instagram, em loja colaborativa ou em marketplace.</li><li>Quem recebe pedido de atacado ou de revenda e quer saber até onde dá o desconto.</li><li>Quem usa Excel ou Google Planilhas no computador (no celular também abre, para consultar).</li></ul></div>
+    <div><h2 class="no-t">Para quem não é</h2><ul class="ok no"><li>Não é curso de artesanato nem traz receitas ou moldes.</li><li>Não informa "preço de mercado" nem as taxas atuais de cada plataforma: você digita e confere.</li><li>Não promete lucro nem renda: a planilha faz a conta, a decisão é sua.</li><li>Não substitui contador (MEI, nota fiscal, impostos).</li></ul></div>
+  </div>
+</div></section>
+
+<section id="preco"><div class="wrap">
+  <div class="preco">
+    <p style="font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px">Preço Certo do Artesanato</p>
+    <div class="v">R$ 27,90</div>
+    <p>compra única, não é assinatura</p>
+    <p>Planilha em branco + planilha com exemplo + guia de 24 páginas + Comece em 10 minutos</p>
+    <a class="btn cta" href="#">Quero a planilha</a>
+    <p style="font-size:14px">Pagamento e entrega pela Kiwify. Os arquivos ficam na área de membros para baixar.</p>
+  </div>
+  <div class="gar">
+    <div class="n">7<small>dias</small></div>
+    <div><b>Garantia de 7 dias.</b> Se o material não servir para você, peça o reembolso pela Kiwify em até 7 dias após a compra.</div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Funciona no Google Planilhas e no celular?</summary><p>Sim. O arquivo .xlsx abre no Excel, no Google Planilhas (computador ou celular) e no LibreOffice, sem macro. Para cadastrar materiais e fichas, o computador é mais confortável; no celular dá para consultar preços e anotar encomendas.</p></details><details><summary>Serve para o meu tipo de artesanato?</summary><p>Serve para qualquer peça feita com material que você compra em pacote e usa em parte: fio, tecido, cera, base de sabonete, papel, resina, massa, cordão, linha. O exemplo traz 9 tipos diferentes.</p></details><details><summary>A planilha já vem com as taxas da Shopee, do Elo7 ou de outra plataforma?</summary><p>Não, de propósito: as taxas mudam com o tempo e com o tipo de conta. A planilha traz 4 canais de exemplo e você digita a comissão, a tarifa por item e o frete atuais da plataforma onde vende.</p></details><details><summary>Eu não sei quanto vale a minha hora.</summary><p>A planilha calcula: você diz quanto quer ganhar por mês com o ateliê e quantas horas trabalha. O guia ensina a medir o tempo de cada peça.</p></details><details><summary>Os preços do exemplo servem para mim?</summary><p>Não. São fictícios, só para mostrar a conta. O seu preço sai dos seus materiais, do seu tempo e dos seus canais.</p></details><details><summary>Sou iniciante em planilha.</summary><p>As células amarelas são as que você preenche; as cinzas calculam sozinhas. O "Comece em 10 minutos" leva você até o preço da primeira peça.</p></details><details><summary>Como eu recebo?</summary><p>Depois da confirmação do pagamento, a Kiwify envia por e-mail o acesso à área de membros. Lá estão os arquivos para baixar.</p></details><details><summary>Posso passar para outra pessoa?</summary><p>A licença é de uso pessoal no seu próprio ateliê. Não é permitido revender nem repassar os arquivos.</p></details><details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Peça o reembolso pela Kiwify.</p></details><details><summary>Ficou com outra dúvida?</summary><p>Escreva para <a href="mailto:joaovictor+P013@rglogistica.com.br">joaovictor+P013@rglogistica.com.br</a>.</p></details>
+  <a class="btn cta" href="#">Quero a planilha · R$ 27,90</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="brand" style="font-size:17px;margin-bottom:10px"><span class="lg"></span>Preço Certo do Artesanato</div>
+  <p>Produto digital: planilha .xlsx (Excel e Google Planilhas) + guia em PDF. Nenhum material físico é enviado. O pagamento e a entrega são feitos pela Kiwify.</p>
+  <p>Exemplos numéricos fictícios. Nomes de plataformas citados apenas como referência; sem vínculo com elas.</p>
+  <p id="privacidade">Esta página não tem formulário e não pede seus dados. Ela usa o pixel da Meta para medir visitas e cliques de forma estatística.</p>
+  <p>Responsável: João Victor Casali.</p>
+  <p>Suporte: <a href="mailto:joaovictor+P013@rglogistica.com.br">joaovictor+P013@rglogistica.com.br</a></p>
+  <p>© 2026 Preço Certo do Artesanato. Textos e artes originais.</p>
+</div></footer>
+
+<div class="barra"><div class="t"><b>R$ 27,90</b>compra única</div><a class="btn cta" href="#">Quero a planilha</a></div>
+
+<script>
+// ===== CHECKOUT =====
+// Trocar o marcador pelo link do checkout da Kiwify (ex.: https://pay.kiwify.com.br/CODIGO).
+// Enquanto o marcador estiver aqui, os botões não levam a lugar nenhum e mostram um aviso.
+var CHECKOUT_URL = 'https://pay.kiwify.com.br/zhbi6Bn';
+var PRONTO = /^https:\/\//.test(CHECKOUT_URL);
+
+var LOGO = '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M30 6h22a6 6 0 0 1 6 6v22L32 60a5 5 0 0 1-7 0L4 39a5 5 0 0 1 0-7z" fill="#7A3B62"/><circle cx="45" cy="19" r="5" fill="#FBF3EA"/><path d="M45 19c6-8 14-9 17-6" fill="none" stroke="#F2B648" stroke-width="3.4" stroke-linecap="round"/><path d="M15 35l14 14M21 29l14 14" stroke="#FBF3EA" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/></svg>';
+Array.prototype.forEach.call(document.querySelectorAll('.lg'), function (e) { e.outerHTML = LOGO; });
+
+// ===== RASTREAMENTO (igual ao P001–P004) =====
+// Repassa ao checkout todos os utm_* recebidos; sck = utm_content (ou sck recebido; sem nenhum, "direto"); src = utm_source;
+// fbclid do anúncio (ou o do cookie _fbc) para a Meta ligar a Compra ao clique.
+function fbclidAtual(q) {
+  if (q.get('fbclid')) return q.get('fbclid');
+  var m = document.cookie.match(/(?:^|;\s*)_fbc=fb\.\d+\.\d+\.([^;]+)/);
+  return m ? decodeURIComponent(m[1]) : '';
+}
+function checkoutLink() {
+  var q = new URLSearchParams(location.search), out = new URLSearchParams();
+  q.forEach(function (v, k) { if (/^utm_/.test(k)) out.set(k, v); });
+  out.set('sck', q.get('utm_content') || q.get('sck') || 'direto');
+  if (q.get('utm_source')) out.set('src', q.get('utm_source'));
+  var fbclid = fbclidAtual(q);
+  if (fbclid) out.set('fbclid', fbclid);
+  return CHECKOUT_URL + (CHECKOUT_URL.indexOf('?') >= 0 ? '&' : '?') + out.toString();
+}
+Array.prototype.forEach.call(document.querySelectorAll('a.cta'), function (a) {
+  if (PRONTO) {
+    a.href = checkoutLink();
+    // CliqueCheckout no clique; o pixel no checkout da Kiwify dispara InitiateCheckout e Purchase (não duplicar aqui).
+    a.addEventListener('click', function (e) {
+      var href = a.href = checkoutLink();
+      if (!window.fbq) return;
+      e.preventDefault();
+      fbq('trackCustom', 'CliqueCheckout', {content_name: 'Preço Certo do Artesanato', content_ids: ['P013'], content_type: 'product', num_items: 1, value: 27.90, currency: 'BRL'});
+      setTimeout(function () { window.location.href = href; }, 300);
+    });
+  } else {
+    a.addEventListener('click', function (e) { e.preventDefault(); alert('Rascunho: o checkout ainda não foi configurado.'); });
+  }
+});
+</script>
+</body>
+</html>
